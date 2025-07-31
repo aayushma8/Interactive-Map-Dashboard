@@ -3,7 +3,7 @@ import Map from "./components/Map";
 function App() {
   return (
     <div>
-      <h1>Interactive Map Dashboard</h1>
+      <h1 style={{ paddingLeft: "16px" }}>Interactive Map Dashboard</h1>
       <Map />
     </div>
   );
