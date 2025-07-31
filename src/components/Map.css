@@ -1,3 +1,24 @@
+/* Ensure full screen layout */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* The actual map container */
+#root {
+  height: 100%;
+}
+
+.map-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
 .school-dropdown {
   position: absolute;
   top: 20px;
@@ -21,10 +42,7 @@
   background-position: right 10px center;
   background-size: 8px 10px;
 
-  /* Add one of these properties */
-  width: 150px; /* Example: set a fixed width */
-  /* OR */
-  /* min-width: 120px; */ /* Example: set a minimum width */
+  width: 150px;
 }
 
 .school-dropdown:hover {
@@ -36,6 +54,7 @@
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25), 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Count of schools */
 .school-count {
   padding: 14px 24px;
   background-color: #f0f4f8;
